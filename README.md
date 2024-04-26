@@ -16,7 +16,12 @@ Upload posts to share with others.
 Responsive design for optimal viewing on various devices.
 
 # Technologies Used
+
+
 React.js
+
 HTML5
+
 CSS3
+
 JavaScript 
