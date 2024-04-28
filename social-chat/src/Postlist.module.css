@@ -1,0 +1,17 @@
+.mar124{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 90px;
+
+}
+
+
+@media screen and (max-width: 760px) {
+  .mar124 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 25vh;
+    margin-left: 5vw;
+    position: absolute;
+    }
+}

@@ -1,14 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import styles from './Sidebar.module.css';
+
+
 
 const Sidebar = ({tab, settab}) => {
   const handleonclick=(e)=>{
     settab(e);
   }
   return (
-    <div style={{position: "fixed", zIndex: 1}}> 
-      <div id='sidebar' className="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style={{width: "240px" ,height:"100vh"}}>
-    <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <div className={styles.sidebar}> 
+      <div id='sidebar' className={`${styles.divsty} d-flex flex-column flex-shrink-0 p-3 text-bg-dark`}>
+    <a href="/" className={` d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none`}>
       <svg className="bi pe-none me-2" width="40" height="32"><use xlinkhref:href="#bootstrap"></use></svg>
       <span className="fs-4">Social Chat</span>
     </a>
@@ -30,8 +33,8 @@ const Sidebar = ({tab, settab}) => {
           Create Post
         </a> */}
           <Link to="/Create-Post" className={`nav-link text-white ${(tab!=="home" && 'act')}`} onClick={()=>{handleonclick("create post")}}  >
-          <svg className="bi pe-none me-2" width="16" height="16"><use xlinkhref:href="#speedometer2"></use></svg>
-          Create Post
+          <svg className={`${styles.mar} bi pe-none me-2`} width="16" height="16"><use xlinkhref:href="#speedometer2"></use></svg>
+          Create
         </Link>
       </li>
     </ul>

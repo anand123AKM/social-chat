@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { PostList} from './poststore'; 
 import Msg from './msg';
 import {useNavigate} from 'react-router-dom';
-
+import styles from "./Postlist.module.css"
 
 const Postlist = () => {
     const navigate = useNavigate();
@@ -21,7 +21,7 @@ fetch('https://dummyjson.com/posts')
   return (
     <div >
       {postList.length === 0 && <Msg onclick={handleonclick} />}
-      <div className='mar321' style={{display:"flex",flexWrap:"wrap", margin:"90px"}}>
+      <div className={`${styles.mar124} mar321`} >
              {postList.map((post)=> <Postdata key={post.id} post={post} />)}
             </div>
     </div>
