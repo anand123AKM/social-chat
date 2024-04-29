@@ -1,120 +1,149 @@
-
-.form12 {
-margin-top: 18vh;
-margin-left: 2vh;
-  padding: 10px;
-  width: 35%;
-  font-weight: bold;
-}
-@media screen and (max-width: 900px) {
-  .form12{
-    margin-top: 33vh;
-      padding: 10px;
-      width: 100%;
-      font-weight: bold;
-  }
-  .msg12{
-    margin-top: 40vh;
-  }
-  .postcard{
-margin-top: 20vh;
-  margin-left: 10vw;
-  margin-right: 2vw;
-    width: 20rem;
-  
-  }
-}
-
-.c{
-display: flex;
-flex-direction: column;
-}
-
-.c1{
-  width: 100%;
-
-}
-.b12{
-    font-size: large;
-      font: 1.2em serif;
-}
-.postcard{
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  z-index: -1;
-}
-.tagmargin{
-  margin: 6px 4px;
-  padding: 5px 10px;
-  background-color: #0812ce;
-}
-.btn12{
-background-color: rgb(19, 0, 105);
-font-weight: bold;
-margin: 20px;
-}
-.btn11{
-  background-color: #000000;
-  font-weight: bold;
-}
-.act{
-  background-color: #0812ce;
-  color: white;
-  font: 1em sans-serif;
-}
-.del{
+.del {
   color: #ff0000;
   cursor: pointer;
   font: bold 1.3em sans-serif;
   margin-top: auto;
 }
 
-.foot12{
+.form12 {
+  margin-top: 18vh;
+  margin-left: 2vh;
+  padding: 10px;
+  width: 40%;
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .form12 {
+    margin-top: 33vh;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .msg12 {
+    margin-top: 40vh;
+  }
+
+  .postcard {
+
+    margin-left: 10vw;
+    margin-right: 2vw;
+    width: 20rem;
+
+  }
+}
+.postcard {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+
+}
+
+
+
+.c {
+  display: flex;
+  flex-direction: column;
+}
+
+.c1 {
+  width: 100%;
+
+}
+
+.b12 {
+  font-size: large;
+  font: 1.2em serif;
+}
+
+
+
+.tagmargin {
+  margin: 6px 4px;
+  padding: 5px 10px;
+  background-color: #0812ce;
+}
+
+.btn12 {
+  background-color: rgb(19, 0, 105);
+  font-weight: bold;
+  margin: 20px;
+}
+
+.btn11 {
+  background-color: #000000;
+  font-weight: bold;
+}
+
+.act {
+  background-color: #0812ce;
+  color: white;
+  font: 1em sans-serif;
+}
+
+
+.foot12 {
   margin: 35px;
   width: 80%;
 }
-.col21{
+
+.col21 {
   background-color: #0812ce;
-    color: white;
-    font-weight: bold;
-    width: 100px;
-    font: 1.1em sans-serif;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  font: 1.1em sans-serif;
 }
-.post21{
+
+.post21 {
   margin: 10px 0px;
   padding: 3px 10px;
   color: azure;
-    border: 1px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 5px;
   width: 45%;
   display: block-inline;
   background-color: #ff0000;
 }
-.arw{
+
+.arw {
   cursor: pointer
 }
-.fix{
+
+.fix {
   position: fixed;
 }
-.msg{
-margin-top: 25vh;
+
+
+.msg {
+  margin-top: 25vh;
   padding: 3px 10px;
   color: rgb(5, 35, 35);
- }
- .get11{
+}
+
+.get11 {
   background-color: #0812ce;
   color: white;
   font-weight: bold;
   font: 1em sans-serif;
- }
- @media screen and (min-width: 900px) {
-  .postcard{
-  margin-top: 20vh;
-        width: 25rem;
+}
+
+
+@media screen and (min-width: 900px) {
+  .postcard {
+    margin-top: 10vh;
+    width: 25rem;
     margin-left: 2vw;
     margin-right: 2vw;
   }
- }
+
+}
+
+.headdiv{
+  margin-bottom: 10vh;
+}

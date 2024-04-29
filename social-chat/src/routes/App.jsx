@@ -13,7 +13,7 @@ const [tab,settab]= useState("home");
   <PostlistPrivider>
     <div className='c'>
     <div className='c1 main-content'>
-       <Header tab={tab} settab={settab} ></Header>
+     <div className='headdiv'>  <Header tab={tab} settab={settab} ></Header></div>
        <Outlet></Outlet>
       <Footer></Footer>
     </div>

@@ -2,8 +2,12 @@ import React, { useContext } from 'react'
 import { MdDelete } from "react-icons/md";
 import { PostList } from './poststore';
 
+
 const Postdata = ({post}) => {
 const {deletepost}=useContext(PostList)
+ const handleDelete = () => {
+    deletepost(post.id); 
+  };
 
   return (
     <>
@@ -18,7 +22,7 @@ const {deletepost}=useContext(PostList)
       <h5>Likes 👍: {post.reactions +" "}people like this Post!! </h5>
     {post.tags.map((tag)=>(<span key={tag} className="badge rounded-pill  tagmargin">{tag}</span>))} 
     <hr/>
-    <h5 className='del' onClick={()=>deletepost(post.id)}>Delete Post : <MdDelete /></h5> 
+    <h5 className="del" onClick={handleDelete}>Delete Post : <MdDelete /></h5> 
   </div>
 </div>
     </>
