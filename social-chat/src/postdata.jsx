@@ -7,7 +7,7 @@ const {deletepost}=useContext(PostList)
 
   return (
     <>
-       <div className="card postcard" style={{width: "25rem"}}>
+       <div className="card postcard" >
   <div className="card-body">
     <h3 className="card-title">{post.title}
       <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger arw">
