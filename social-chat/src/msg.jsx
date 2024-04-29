@@ -3,7 +3,7 @@ import React from 'react'
 const Msg = ({onclick}) => {
   return (
     <>
-    <div>
+    <div className='msg12' >
      <center className='msg'> <h1>There is no Post !!</h1>
       <button
       onClick={onclick}

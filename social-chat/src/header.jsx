@@ -1,7 +1,11 @@
 import React from 'react'
 import styles from './Header.module.css';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({tab, settab}) => {
+    const handleonclick=(e)=>{
+    settab(e);
+  }
   return (
     <div >
        <header className={`${styles.divsty} p-3 text-bg-dark`}>
@@ -18,16 +22,20 @@ const Header = () => {
           <li><a href="#" className="nav-link px-2 text-white">About</a></li>
             <li><a href="#" className="nav-link px-2 text-white">FAQs</a></li>
         </ul>
-
+   <div className="text-end">
+          <button type="button" onClick={()=>{handleonclick("home")}} className="btn
+ btn12"><Link to="/" className={`nav-link text-white ${(tab==="home" && 'act' )}`} aria-current="page">
+          <svg className="bi pe-none me-2" width="16" height="16"><use xlinkhref:href="#home"></use></svg>
+          Home
+        </Link></button>
+          <button type="button" onClick={()=>{handleonclick("create post")}}  className="btn btn12"> <Link to="/Create-Post" className={`nav-link text-white ${(tab!=="home" && 'act')}`}  >
+          <svg className={`${styles.mar} bi pe-none me-2`} width="16" height="16"><use xlinkhref:href="#speedometer2"></use></svg>
+          Create
+        </Link></button>
+        </div>
         <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
           <input type="search" className="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search" />
         </form>
-
-        <div className="text-end">
-          <button type="button" className="btn btn-outline-light me-2 btn11">Login</button>
-          <button type="button" className="btn
-          btn-warning btn12">Sign-up</button>
-        </div>
       </div>
     </div>
   </header>
