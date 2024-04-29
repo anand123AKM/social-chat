@@ -11,7 +11,11 @@ const Header = ({tab, settab}) => {
        <header className={`${styles.divsty} p-3 text-bg-dark`}>
     <div className="container">
       <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+<<<<<<< HEAD
          <h1 className={styles.heading} >SOCIAL CHAT✌️</h1>
+=======
+         <h1 className={styles.heading} >SOCIAL CHAT ✌️</h1>
+>>>>>>> bdb45798693feb77dc8777b51fba9606260bd335
     
        
         <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
