@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { MdDelete } from "react-icons/md";
 import { PostList } from './poststore';
 
@@ -9,17 +9,22 @@ const {deletepost}=useContext(PostList)
     deletepost(post.id); 
   };
 
+  const [AddLike, setLike] = useState(post.reactions)
+  const addLike =()=>{
+setLike(post.reactions+1)
+  }
+
   return (
     <>
        <div className="card postcard" >
   <div className="card-body">
     <h3 className="card-title">{post.title}
-      <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger arw">
-  {post.reactions+"+👍"}
+      <span onClick={addLike} className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger arw">
+  {AddLike+"+👍"}
   </span>
     </h3>
     <p className="card-text b12">{post.body}</p>
-      <h5>Likes 👍: {post.reactions +" "}people like this Post!! </h5>
+      <h5>Likes 👍: {AddLike +" "}people like this Post!! </h5>
     {post.tags.map((tag)=>(<span key={tag} className="badge rounded-pill  tagmargin">{tag}</span>))} 
     <hr/>
     <h5 className="del" onClick={handleDelete}>Delete Post : <MdDelete /></h5> 
