@@ -46,7 +46,7 @@ addpost(userId,title,body,reactions,tags);
     <textarea ref={bodyele} rows={4} placeholder='Enter your content' type="text" className="form-control" id="body" />
   </div>
     <div className="mb-3">
-     <label htmlFor="reactions" className="form-label"></label>No. of Likes=:
+     <label htmlFor="reactions" className="form-label"></label>Target - No. of Likes:
     <input ref={reactionsele} placeholder='no. of likes' type="text" className="form-control" id="reactions" />
   </div>
    <div className="mb-3">

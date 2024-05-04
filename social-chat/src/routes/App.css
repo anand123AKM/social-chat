@@ -17,14 +17,14 @@
 
 @media screen and (max-width: 900px) {
   .form12 {
-    margin-top: 33vh;
-    padding: 10px;
+    margin-top: 15vh;
+    padding: 20px;
     width: 100%;
     font-weight: bold;
   }
 
   .msg12 {
-    margin-top: 40vh;
+    margin-top: 20vh;
   }
 
   .postcard {
@@ -48,6 +48,7 @@
 
 .c {
   display: flex;
+  background-color: beige;
   flex-direction: column;
 }
 
@@ -137,7 +138,7 @@
 @media screen and (min-width: 900px) {
   .postcard {
     margin-top: 10vh;
-    width: 25rem;
+    width: 23rem;
     margin-left: 2vw;
     margin-right: 2vw;
   }
@@ -146,4 +147,10 @@
 
 .headdiv{
   margin-bottom: 10vh;
+}
+
+.mar321{
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
 }

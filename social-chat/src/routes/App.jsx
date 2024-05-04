@@ -15,7 +15,7 @@ const [tab,settab]= useState("home");
     <div className='c1 main-content'>
      <div className='headdiv'>  <Header tab={tab} settab={settab} ></Header></div>
        <Outlet></Outlet>
-      <Footer></Footer>
+         <Footer></Footer>
     </div>
     </div>
   </PostlistPrivider>

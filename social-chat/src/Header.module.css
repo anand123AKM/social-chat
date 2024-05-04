@@ -6,7 +6,6 @@
 
 .heading{
  align-items: start;
-  font-weight: bold;
 }
 
 @media screen and (min-width: 780px) {
