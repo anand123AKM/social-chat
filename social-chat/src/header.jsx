@@ -11,7 +11,7 @@ const Header = ({tab, settab}) => {
        <header className={`${styles.divsty} p text-bg-dark`}>
     <div className="container">
       <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-         <h1 className={styles.heading} >SocialVerse</h1>
+         <h1 className={styles.heading} >Social Verse</h1>
    <div className="text-end">
           <button type="button" onClick={()=>{handleonclick("home")}} className="btn
  btn12"><Link to="/" className={`nav-link text-white ${(tab==="home" && 'act' )}`} aria-current="page">
