@@ -7,7 +7,7 @@ const Msg = ({onclick}) => {
      <center className='msg'> <h1>There is no Post !!</h1>
       <button
       onClick={onclick}
-      type="button" className="btn btn-primary get11">Get Post From Server</button>
+      type="button" className="btn btn-primary get11">See others Posts</button>
      </center>
     </div>
     </>
