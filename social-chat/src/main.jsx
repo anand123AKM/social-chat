@@ -1,34 +1,11 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom/client'
-// import  {RouterProvider, createBrowserRouter } from "react-router-dom"
-// import App from './routes/App'
-// import CreatePost from './post'
-// import Postlist from './postlist'
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import App from "./routes/App";
+import CreatePost from "./post";
+import Postlist from "./postlist";
 
-// const router = createBrowserRouter([
-//  {path : "/",  element:<App/> , children: [ { path: "/",
-//   element: <Postlist/> },
-//   {
-//     path:"/Create-Post",
-//     element:<CreatePost/>
-//   }]},
-// ]
-// )
-
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//    <RouterProvider router={router}  ></RouterProvider>
-//   </React.StrictMode>,
-// )
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import App from './routes/App';
-import CreatePost from './post';
-import Postlist from './postlist';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
       <Routes>
@@ -38,5 +15,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Route>
       </Routes>
     </Router>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
