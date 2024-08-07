@@ -10,7 +10,7 @@ const Postdata = ({ post }) => {
 
   const [AddLike, setLike] = useState(post.reactions.likes);
   const addLike = () => {
-    setLike(post.reactions + 1);
+    setLike(post.reactions.likes + 1);
   };
 
   return (
